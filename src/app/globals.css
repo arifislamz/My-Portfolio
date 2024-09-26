@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background Colors */ 
+/* Global Background Gradient Classes */
+
+/* 1. Midnight Aurora */
+.bg1 {
+  background: linear-gradient(80deg, #005dae 30%, #000536 80%);
+}
+/* 2. Oceanic Depths */
+.bg2 {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+/* 3. Royal Velvet */
+.bg3 {
+  background: linear-gradient(135deg, #1c1c3c 0%, #2a2a72 50%, #6b6b9e 100%);
+}
+/* 4. Nebula Glow */
+.bg4 {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+/* 5. Galactic Horizon */
+.bg5 {
+  background: linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+}
+/* 6. Twilight Ember */
+.bg6 {
+  background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+}
+/* 7. Midnight Mirage */
+.bg7 {
+  background: linear-gradient(135deg, #16222a 0%, #3a6073 100%);
+}
+/* 8. Carbon Sunset */
+.bg8{
+  background: linear-gradient(135deg, #1e1e2f 0%, #232526 50%, #414345 100%);
+}
+/* 9. Deep Space */
+.bg9 {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+}
+
+/* 10. Cosmic Twilight */
+.bg10 {
+  background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+}
+
+/* FOR BUTTONS ACCORDING TO bg1 */
+
+/* Global Button Styles using Data Attribute */
+/* Global Button Styles using Data Attribute for High Contrast */
+[data-theme="midnight-aurora-button"] {
+  background: linear-gradient(135deg, #ffdd57 0%, #ff9f1c 100%); /* Yellow to Orange Gradient */
+  color: #000428; /* Dark Blue Text */
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #ccc; /* Light Blue Border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; background :0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+[data-theme="midnight-aurora-button"]::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border: none;
+  background: rgba(255, 255, 255, 0.2); /* Subtle White Overlay */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+[data-theme="midnight-aurora-button"]:hover::before {
+  opacity: 1;
+}
+
+[data-theme="midnight-aurora-button"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ff9501 0%, #ffdd57 100%); /* Inverse Gradient on Hover */
+  border-color:1px solid #ccc; /* Yellow Border on Hover */
+}
+
+[data-theme="midnight-aurora-button"]:focus {
+  outline: none;
+}
+
+[data-theme="midnight-aurora-button"] span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* Custom tooltip styling for elements with the data-title attribute */
+[data-title] {
+  position: relative; /* Ensure the element is positioned relative to its tooltip */
+  cursor: pointer; /* Show a pointer cursor to indicate hover */
+}
+
+[data-title]::before {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 100%; /* Position the tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000; /* Ensure the tooltip is above other elements */
+}
+
+[data-title]::after {
+  content: "";
+  position: absolute;
+  bottom: 90%; /* Adjusts the position for the arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999; /* Ensure the arrow is below the tooltip */
+}
+
+[data-title]:hover::before,
+[data-title]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Move to Top button animation keyframe */
+.moveUpDown {
+  animation: moveUpDown 3s linear infinite;
+}
+@keyframes moveUpDown {
+  
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+/* --------------------------------------------------------- */
+    /* Skill Card Some Animations */
+
+    /* Define the progress bar animation */
+@keyframes fillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Define the fire bounce animation */
+@keyframes fireBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Styling the progress bar */
+.skill-bar {
+  transition: width 2s ease-in-out; /* Smooth transition */
+}
+
+
