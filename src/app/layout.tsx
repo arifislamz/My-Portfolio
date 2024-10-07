@@ -23,9 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-      <meta name="google-site-verification" content="z9IZbnerGnYzJFU2cfnITULt_lzOnsvr9MjWUVkVztA" />
-      </Head>
       <body className={`${inter.className} bg1 w-full`} >
         <Navbar />
 
