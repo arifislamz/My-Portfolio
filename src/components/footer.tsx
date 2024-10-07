@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative w-full px-5 pt-4 lg:px-10 border-t-2 bg-gradient-to-r from-blue-900 via-gray-900 to-blue-900 overflow-hidden text-white ">
+        <footer className="relative w-full px-5 pt-4 lg:px-10 border-t-2 bg-gradient-to-r from-slate-900 via-black to-slate-900 overflow-hidden text-white ">
             {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 "></div>
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.15)_0%,_transparent_70%)]"></div> */}
             <div className=" grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
