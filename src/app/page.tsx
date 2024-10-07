@@ -24,9 +24,9 @@ export default function Home() {
         <hr />
         <MyProjects />
         <hr />
-        <ServicesPage/>
+        <ServicesPage />
         <hr />
-        <ContactPage/>
+        <ContactPage />
       </div>
     </main>
   );

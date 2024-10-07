@@ -3,10 +3,11 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
-      <ContactPage/>
 
+    <div className="flex justify-center">
+      <ContactPage />
     </div>
+
   )
 }
 

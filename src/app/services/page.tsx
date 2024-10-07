@@ -3,8 +3,11 @@ import React from 'react'
 
 const Services =() =>{
     return(
-        
-        <ServicesPage/>
+        <div className="flex justify-center">
+
+            
+            <ServicesPage/>
+        </div>
         
     )
 }

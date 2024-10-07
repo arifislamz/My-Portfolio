@@ -2,7 +2,12 @@ import MyProjectsPage from "@/components/myprojects"
 
 const MyProject = () => {
     return (
-        <MyProjectsPage />
+
+        <div className="flex justify-center">
+
+            
+            <MyProjectsPage />
+        </div>
     )
 }
 

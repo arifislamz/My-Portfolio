@@ -1,6 +1,10 @@
+import AboutPage from "@/components/aboutPage";
+
 const About =()=>{
     return (
-        <div className="min-h-screen ">About Page</div>
+        <div className="flex justify-center">
+            <AboutPage/>
+        </div>
     )
 }
 

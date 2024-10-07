@@ -49,7 +49,7 @@ const SkillsSection: React.FC = () => {
   ];
 
   return (
-    <section className="container h-auto py-5 flex flex-col justify-center items-center text-white   overflow-hidden relative pt-5 ">
+    <section className="container min-hight-screen  py-10 flex flex-col justify-center items-center text-white   overflow-hidden relative ">
       <header className='relative p-4 text-center'>
         <h2 className='text-4xl font-bold'>Skills</h2>
         <p className='text-gray-300  mt-1'>My Technical Level</p>
