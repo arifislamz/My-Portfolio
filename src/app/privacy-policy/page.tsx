@@ -2,7 +2,7 @@ import PrivacyPolicyPage from "@/components/privacy-policy"
 
 const PrivacyPolicy = () => {
     return (
-        <div className="min-h-screen flex justify-center items-center text-4xl text-white">
+        <div className="min-h-screen bg-gray-900 ">
             <PrivacyPolicyPage />
         </div>
     )

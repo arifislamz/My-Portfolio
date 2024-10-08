@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
 
 
     return (
-        <header className={`w-full  transition-transform duration-700 ${isScrolled ? 'fixed top-0 z-50 bg-slate-900' : 'relative'}`}>
+        <header className={`w-full  transition-transform duration-700 ${isScrolled ? 'fixed top-0 z-50 bg-gradient-to-r from-blue-800 via-black to-gray-900' : 'relative'}`}>
             <div className="relative overflow-hidden p-4 ">
                 {/* Background gradient */}
 
