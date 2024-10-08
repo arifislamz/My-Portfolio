@@ -3,7 +3,7 @@ import { ShieldCheckIcon, CreditCardIcon, UserCircleIcon, LockClosedIcon, Docume
 const PrivacyTerms = () => {
   return (
     <div className="  text-gray-300 min-h-screen px-6 py-12">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
 
         <h1 className="text-center underline text-5xl font-semibold text-white mb-16">
           Privacy Policy & Cookies
